@@ -18,6 +18,7 @@ var arr = [10, 20, 30];
 */
 
 //Code Here
+
 let first = (arr) => {
   return arr[0]
 }
@@ -57,7 +58,7 @@ let looper = (family) => {
     alert(family[i], i)
   }
 }
-looper(family)
+
 
 ////////// PROBLEM 4 //////////
 
@@ -127,18 +128,18 @@ var numbersArray = [1, 2, 34, 54, 55, 34, 32, 11, 19, 17, 54, 66, 13];
 */
 
 //Code Here
-let divider = (numbersArray) => {
-  let evens = []
-  let odds = []
-  for (let i = 0; i < numbersArray.length; i++) {
-    if (numbersArray[i] % 2 === 0) {
-      evens.push(numbersArray[i])
-    } else {
-      odds.push(numbersArray[i])
-    }
-  }
-  return [evens, odds]
-}
+// let divider = (numbersArray) => {
+//   let evens = []
+//   let odds = []
+//   for (let i = 0; i < numbersArray.length; i++) {
+//     if (numbersArray[i] % 2 === 0) {
+//       evens.push(numbersArray[i])
+//     } else {
+//       odds.push(numbersArray[i])
+//     }
+//   }
+//   return [evens, odds]
+// }
 
 
 ////////// PROBLEM 7 //////////
@@ -160,17 +161,17 @@ var getRandomArbitrary = function () {
 */
 
 //Code Here
-let ar = [2, 5, 10, 25, 30]
-let finder = (ar) => {
-  let randomNumber = getRandomArbitrary();
-  for (let i = 0; i < ar.length; i++) {
-    if (ar[i] == randomNumber) {
-      return true
-    }
-    else {
-      return false
-    }
-  }
+// let ar = [2, 5, 10, 25, 30]
+// let finder = (ar) => {
+//   let randomNumber = getRandomArbitrary();
+//   for (let i = 0; i < ar.length; i++) {
+//     if (ar[i] == randomNumber) {
+//       return true
+//     }
+//     else {
+//       return false
+//     }
+//   }
 }
 
 
@@ -200,14 +201,15 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 */
 
 //Code Here
-let removeItem = (myGroceryList, item) => {
-  for (let i = 0; i < myGroceryList.length; i++) {
-    if (myGroceryList[i] == item) {
-      myGroceryList.splice(i, 1);
-    }
-  }
-  return myGroceryList
-}
+
+// let removeItem = (myGroceryList, item) => {
+//   for (let i = 0; i < myGroceryList.length; i++) {
+//     if (myGroceryList[i] == item) {
+//       myGroceryList.splice(i, 1);
+//     }
+//   }
+//   return myGroceryList
+// }
 
 
 
@@ -240,16 +242,16 @@ var numbers = [5, '9', 16, 19, '25', '34', 48];
 ////////// PROBLEM 11 //////////
 
 // Do not edit the code below.
-var num1 = Math.floor(Math.random() * 30);
-var num2 = Math.floor(Math.random() * 30);
-var arr1 = [];
-var arr2 = [];
-for (var i = 0; i < num1; i++) {
-  arr1.push(i);
-}
-for (var i = 0; i < num2; i++) {
-  arr2.push(i);
-}
+// var num1 = Math.floor(Math.random() * 30);
+// var num2 = Math.floor(Math.random() * 30);
+// var arr1 = [];
+// var arr2 = [];
+// for (var i = 0; i < num1; i++) {
+//   arr1.push(i);
+// }
+// for (var i = 0; i < num2; i++) {
+//   arr2.push(i);
+// }
 // Do not edit the code above.
 
 /*
