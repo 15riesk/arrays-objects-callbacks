@@ -28,8 +28,8 @@
 */
 
 // Code Here 
-let first = function (names, first) {
-  first(names,)
+let first = function (array, cb) {
+  cb(array[0])
 }
 
 
@@ -52,7 +52,9 @@ first(names, function (firstName) {
 */
 
 //Code Here
-
+let last = function (array, cb) {
+  cb(array[array.length - 1])
+}
 // Do not edit the code below.
 last(names, function (lastName) {
   console.log('The last name in names is ' + lastName);
@@ -70,7 +72,9 @@ last(names, function (lastName) {
 */
 
 //Code Here
-
+function multiply(num1, num2, cbFunc) {
+  cbFunc(num1 * num2)
+}
 // Do not edit the code below.
 multiply(4, 3, function (answer) {
   console.log('The answer is ' + answer); //should console.log 12
@@ -89,7 +93,14 @@ multiply(4, 3, function (answer) {
 */
 
 //Code Here 
-
+let contains = function (array, name, cb) {
+  if (array.includes(name)) {
+    cb(true)
+  }
+  else {
+    cb(false)
+  }
+}
 // Do not edit the code below.
 contains(names, 'Colt', function (result) {
   if (result === true) {
@@ -110,7 +121,10 @@ contains(names, 'Colt', function (result) {
 */
 
 //Code Here
-
+let uniq = function (array, cb) {
+  let newarr = [...new Set(array)]
+  cb(newarr)
+}
 // Do not edit the code below.
 uniq(names, function (uniqArr) {
   console.log('The new names array with all the duplicate items removed is ', uniqArr);
@@ -127,7 +141,11 @@ uniq(names, function (uniqArr) {
 */
 
 //Code Here 
-
+let each = function (arr, cb) {
+  for (let i = 0; i < arr.length; i++) {
+    cb(arr[i], i)
+  }
+}
 // Do not edit the code below.
 each(names, function (item, indice) {
   console.log('The item in the ' + indice + ' position is ' + item)
@@ -144,7 +162,13 @@ each(names, function (item, indice) {
 */
 
 // Code here
-
+let getUserById = function (users, id, cb) {
+  for (let i = 0; i < users.length; i++) {
+    if (users[i].id == id) {
+      cb(users[i])
+    }
+  }
+}
 // Do not edit the code below.
 var users = [
   {
